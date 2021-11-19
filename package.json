@@ -1,0 +1,14 @@
+{
+  "name": "template-scss",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start" : "sass --style=compressed --watch scss/style.scss:./style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.43.4"
+  }
+}

@@ -1,0 +1,47 @@
+// breakpoint
+@mixin media-max-width($width) {
+    @media (max-width: $width) {
+        @content;
+    }
+}
+
+@mixin media-min-width($width) {
+    @media (min-width: $width) {
+        @content;
+    }
+}
+
+@import './breakpoints';
+
+@mixin main-container-width {
+    width: $main-container-width;
+    margin: 0 auto;
+}
+
+@mixin main-container-width-with-padding($padding) {
+    width: calc(#{$main-container-width} + (2 * #{$padding}));
+    margin: 0 auto;
+    padding: 0 $padding;
+}
+
+@mixin main-container-width {
+    width: $main-container-width;
+    margin: 0 auto;
+}
+
+@mixin smaller-main-container-width {
+    width: $smaller-main-container-width;
+    margin: 0 auto;
+}
+
+@mixin responsive-container-width {
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    overflow: hidden;
+
+    @include media-max-width($mobile-breakpoint) {
+        padding-left: 1.63rem;
+        padding-right: 1.63rem;
+    }
+}
