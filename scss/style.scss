@@ -113,6 +113,25 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+
+    &.active{
+      filter: drop-shadow(16px 16px 20px $Desaturated-Red);
+    }
+  }
+
+  
+}
+
+.error_icon{
+  // width: 1.25rem;
+  // height: 1.25rem;
+  padding: 0 .5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img{
+    width: 100%;
+    height : auto;
   }
 }
 
@@ -132,3 +151,10 @@ main{
   }
 }
 
+.border_error{
+  border: 1px solid $Soft-Red;
+}
+
+.text-error{
+  color : $Soft-Red;
+}

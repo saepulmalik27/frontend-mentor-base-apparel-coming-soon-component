@@ -52,12 +52,14 @@
             </p>
           </div>
           <div class="card-footer">
-            <form class="form-group" >
-              <input class="form-input" type="text" placeholder="Email Address" />
-              <div class="form-btn">
+            <form class="form-group"  id="form" >
+              <input class="form-input" type="text" placeholder="Email Address" id="form_input" />
+              <div id="error_icon"></div>
+              <div class="form-btn" id="sent_email">
                 <img src="./images/icon-arrow.svg" alt="" />
               </div>
             </form>
+            <div class="error" id="error_email"></div>
           </div>
         </div>
       </div>
@@ -75,5 +77,6 @@
         >. Coded by <a href="#">Your Name Here</a>.
       </p>
     </footer>
+    <script src="./logic.js"></script>
   </body>
 </html>
